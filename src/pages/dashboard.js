@@ -8,14 +8,13 @@ function Dashboard() {
     <div>
       <NavbarPrincipal />
       <SideMenu />
-
       <div className="content-wrapper">
-        {/* Encabezado */}
+        {/* ENCABEZADO*/}
         <section className="content-header">
           <div className="container-fluid">
             <div className="row mb-2">
               <div className="col-sm-6">
-                <h1>Dashboard</h1>
+                <h1>Dashboard - Helio Andes</h1>
               </div>
               <div className="col-sm-6">
                 <ol className="breadcrumb float-sm-right">
@@ -29,12 +28,12 @@ function Dashboard() {
           </div>
         </section>
 
-        {/* Contenido principal */}
+        {/* CONTENIDO */}
         <section className="content">
           <div className="container-fluid">
             <div className="row">
 
-              {/* TARJETA CELESTE -> SERVICIOS */}
+              {/*SERVICIOS */}
               <div className="col-lg-3 col-6">
                 <Link
                   to="/servicios"
@@ -42,19 +41,19 @@ function Dashboard() {
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <div className="inner">
-                    <h3>150</h3>
-                    <p>Servicios</p>
+                    <h3>Servicios</h3>
+                    <p>Disponibles</p>
                   </div>
                   <div className="icon">
-                    <i className="ion ion-bag" />
+                    <i className="nav-icon fas fa-wrench" />
                   </div>
                   <span className="small-box-footer">
-                    Ir a Servicios <i className="fas fa-arrow-circle-right" />
+                    Ir a conocerlos <i className="fas fa-arrow-circle-right" />
                   </span>
                 </Link>
               </div>
 
-              {/* TARJETA VERDE -> PLANES */}
+              {/*PLANES */}
               <div className="col-lg-3 col-6">
                 <Link
                   to="/planes"
@@ -62,20 +61,17 @@ function Dashboard() {
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <div className="inner">
-                    <h3>
-                      53<sup style={{ fontSize: "20px" }}>%</sup>
-                    </h3>
-                    <p>Planes</p>
+                    <h3>Planes</h3>
+                    <p>Disponibles</p>
                   </div>
                   <div className="icon">
-                    <i className="ion ion-stats-bars" />
+                    <i className="nav-icon fas fa-solar-panel" />
                   </div>
                   <span className="small-box-footer">
-                    Ir a Planes <i className="fas fa-arrow-circle-right" />
+                    Ir a conocerlos <i className="fas fa-arrow-circle-right" />
                   </span>
                 </Link>
               </div>
-
             </div>
           </div>
         </section>

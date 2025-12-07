@@ -3,11 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
 import Servicios from './pages/servicios';
 import Planes from './pages/planes';
-
-// OJO: este es el default export de pages/detail.js
 import ServicioDetallado from './pages/detail';
-
-// 👉 IMPORTA TAMBIÉN EL DETALLE DE PLANES
 import PlanDetail from './pages/plan_detail';
 
 function App() {

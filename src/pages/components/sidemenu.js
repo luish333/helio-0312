@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 function SideMenu() {
     return (
-        <aside className="main-sidebar sidebar-dark-primary elevation-4">
-            {/* Brand Logo */}
+        <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{ backgroundColor: 'rgba(35, 89, 40, 0.69)' }}>
+            {/* LOGO */}
             <div className="brand-link">
                 <img
                     src="dist/img/HelioAndesLogo.png"
@@ -14,7 +14,7 @@ function SideMenu() {
                 <span className="brand-text font-weight-light">Helio Andes</span>
             </div>
 
-            {/* Sidebar */}
+            {/* SIDEBAR */}
             <div className="sidebar">
                 {/* Sidebar user panel */}
                 <div className="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -24,7 +24,7 @@ function SideMenu() {
                 </div>
 
                 {/* Sidebar Menu */}
-                <nav className="mt-2">
+                <nav className="mt-1">
                     <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                         {/* Dashboard */}
@@ -36,14 +36,19 @@ function SideMenu() {
                         </li>
 
                         {/* Separador - Gestión */}
-                        <li className="nav-header">GESTIÓN</li>
+                        <li className="nav-header text-white">GESTIÓN</li>
 
                         {/* Servicios */}
                         <li className="nav-item">
-                            <a href="/servicios" className="nav-link">
-                                <i className="nav-icon fas fa-wrench text-info" />
+                            <NavLink
+                            to="/servicios"
+                            className={({ isActive }) =>
+                                    `nav-link ${isActive ? 'active' : ''}`
+                                }
+                            >
+                                <i className="nav-icon fas fa-wrench" />
                                 <p>Servicios</p>
-                            </a>
+                            </NavLink>
                         </li>
 
                         {/* Planes */}
@@ -54,20 +59,9 @@ function SideMenu() {
                                     `nav-link ${isActive ? 'active' : ''}`
                                 }
                             >
-                                <i className="nav-icon fas fa-solar-panel text-success" />
+                                <i className="nav-icon fas fa-solar-panel" />
                                 <p>Planes</p>
                             </NavLink>
-                        </li>
-
-                        {/* Separador - Usuario */}
-                        <li className="nav-header">USUARIO</li>
-
-                        {/* Salir */}
-                        <li className="nav-item">
-                            <a href="/logout" className="nav-link">
-                                <i className="nav-icon fas fa-sign-out-alt text-danger" />
-                                <p>Salir</p>
-                            </a>
                         </li>
                     </ul>
                 </nav>
