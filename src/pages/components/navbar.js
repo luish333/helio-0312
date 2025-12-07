@@ -8,13 +8,9 @@ function NavbarPrincipal() {
                 <li className="nav-item">
                     <a className="nav-link" data-widget="pushmenu" href="#" role="button"><i className="fas fa-bars" /></a>
                 </li>
-                <Link
-                to="/dashboard"
-                >
                 <li className="nav-item d-none d-sm-inline-block">
-                    <a href="App.js" className="nav-link">Inicio</a>
+                    <Link to="/dashboard" className="nav-link">Inicio</Link>
                 </li>
-                </Link>
             </ul>
         </nav>
     );
