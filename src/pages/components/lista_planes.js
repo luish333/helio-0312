@@ -79,7 +79,7 @@ function ListaPlanes() {
                     <div className="card-footer">
                       <div className="text-right">
                         <Link
-                          to={`/planes/${plan.id}`}
+                          to={`/planes/$d}{plan.i`}
                           className="btn btn-sm btn-primary"
                         >
                           <i className="fas fa-clipboard-list" /> Ver Detalles
