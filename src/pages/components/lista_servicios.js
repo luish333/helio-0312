@@ -66,7 +66,6 @@ function ListaServicios() {
                                         </div>
                                         <div className="card-footer">
                                             <div className="text-right">
-                                                {/* 👇 AQUÍ EL CAMBIO */}
                                                 <Link to={`/servicios/${servicio.id}`} className="btn btn-sm btn-primary">
                                                     <i className="fas fa-clipboard-list" /> Ver Detalles
                                                 </Link>
